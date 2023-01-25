@@ -1,0 +1,129 @@
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit
+$ git init
+Initialized empty Git repository in C:/Users/User/Desktop/ProjetoGit/.git/
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (master)
+$ git add readme.md
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (master)
+$ git Readme.md
+git: 'Readme.md' is not a git command. See 'git --help'.
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (master)
+$ git add Readme.md
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Readme.md
+
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (master)
+$ git commit -m "primeiro commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'User@DESKTOP-AL2C7AV.(none)')
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (master)
+$ git config --global user.email "88828c@gmail.com"
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Readme.md
+
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (master)
+$ git commit -m "primeiro commit"
+[master (root-commit) 409e5b7] primeiro commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Readme.md
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (master)
+$ git branch -m "main"
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (main)
+$ git remote add origin https://github.com/88828c/ProjetoGit.git
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 213 bytes | 213.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/88828c/ProjetoGit.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (main)
+$ git add .
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Boa noite em ingles.md
+        modified:   Readme.md
+
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (main)
+$ git commit -m "criação do projeto"
+[main 4c4c4b3] criação do projeto
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 Boa noite em ingles.md
+
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (main)
+$ git push origin main
+gi statEnumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 340 bytes | 340.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+uTo https://github.com/88828c/ProjetoGit.git
+   409e5b7..4c4c4b3  main -> main
+s
+User@DESKTOP-AL2C7AV MINGW64 ~/Desktop/ProjetoGit (main)
+$ 
+
